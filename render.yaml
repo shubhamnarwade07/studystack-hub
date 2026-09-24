@@ -1,0 +1,39 @@
+# Render Infrastructure-as-Code Blueprint for StudyStack Hub
+# Documentation: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: studystack-hub
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*.svg
+        name: Cache-Control
+        value: "public, max-age=86400"
+      - path: /*.css
+        name: Cache-Control
+        value: "public, max-age=86400"
+      - path: /*.js
+        name: Cache-Control
+        value: "public, max-age=86400"
+    routes:
+      - type: rewrite
+        source: /tools
+        destination: /tools.html
+      - type: rewrite
+        source: /frameworks
+        destination: /frameworks.html
+      - type: rewrite
+        source: /home
+        destination: /index.html

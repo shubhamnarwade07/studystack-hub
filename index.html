@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Student Productivity Directory | Free AI Tools &amp; Study Frameworks</title>
+  <meta name="title" content="Student Productivity Directory | Free AI Tools &amp; Study Frameworks">
+  <meta name="description" content="Discover curated AI tools, study frameworks, and academic resource kits for university students. Learn Feynman technique, Active Recall, and Pomodoro.">
+  <meta name="keywords" content="student productivity tools, AI tools for students, academic research tools, study frameworks, active recall, feynman technique, spaced repetition flashcards, pomodoro timer, college study methods">
+  <meta name="author" content="StudyStack Hub">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0F172A">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://studystack-hub.onrender.com/">
+
+  <!-- Google Search Console Site Verification (Update 'content' with token from Google Search Console) -->
+  <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_SEARCH_CONSOLE_CODE_HERE">
+
+  <!-- Google tag (gtag.js) / Google Analytics 4 (Replace G-XXXXXXXXXX with your Measurement ID) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studystack-hub.onrender.com/">
+  <meta property="og:title" content="Student Productivity Directory | Free AI Tools &amp; Study Frameworks">
+  <meta property="og:description" content="Discover curated AI tools, study frameworks, and academic resource kits for university students.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:site_name" content="StudyStack Hub">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://studystack-hub.onrender.com/">
+  <meta name="twitter:title" content="Student Productivity Directory | Free AI Tools &amp; Study Frameworks">
+  <meta name="twitter:description" content="Discover curated AI tools, study frameworks, and academic resource kits for university students.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tailwind CSS CDN with custom design tokens -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              slate: '#F8FAFC',
+              blue: '#3B82F6',
+              purple: '#8B5CF6',
+              teal: '#14B8A6',
+              amber: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', '"Open Sans"', '"Helvetica Neue"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data: WebSite, Organization & FAQPage (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://studystack-hub.onrender.com/#organization",
+        "name": "StudyStack Hub",
+        "url": "https://studystack-hub.onrender.com/",
+        "logo": "https://studystack-hub.onrender.com/favicon.svg",
+        "description": "A curated student productivity directory for discovering useful tools, study frameworks, and academic resources."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://studystack-hub.onrender.com/#website",
+        "url": "https://studystack-hub.onrender.com/",
+        "name": "StudyStack Hub",
+        "publisher": {
+          "@id": "https://studystack-hub.onrender.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://studystack-hub.onrender.com/tools.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://studystack-hub.onrender.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the best free AI productivity tools for university students?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Top vetted academic AI tools include Consensus for peer-reviewed literature synthesis, Anki for algorithmic spaced repetition, Zotero for citation management, and Pomofocus for distraction-free timed sprints."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the most effective scientific study technique for exam retention?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Active Recall paired with Spaced Repetition (via the Leitner System or Anki) is scientifically proven to outperform passive rereading by strengthening neural synaptic pathways during deliberate retrieval."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Feynman Technique help understand difficult concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Feynman Technique forces you to teach a concept in plain, simple terms without academic jargon. Wherever you stumble or use filler language reveals the precise conceptual gap you need to review."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is StudyStack Hub free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, StudyStack Hub is an open, 100% free directory created for university students, featuring un-sponsored tool recommendations and evidence-backed learning frameworks."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-brand-slate text-slate-800 antialiased font-sans min-h-screen flex flex-col">
+
+  <!-- ==================== GLOBAL HEADER ==================== -->
+  <header class="bg-brand-navy border-b border-slate-800 sticky top-0 z-50 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-lg p-1" aria-label="StudyStack Hub Homepage">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center shadow-md">
+            <!-- Stacked Knowledge Icon -->
+            <svg class="w-5 h-5 text-white transform group-hover:scale-105 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <span class="font-bold text-lg tracking-tight text-white group-hover:text-blue-300 transition-colors">StudyStack<span class="text-brand-blue font-semibold ml-1">Hub</span></span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-3" aria-label="Primary Navigation">
+          <a href="index.html" class="px-3 py-2 rounded-md text-sm font-semibold bg-slate-800 text-white border border-slate-700" aria-current="page">Home</a>
+          <a href="tools.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Tools Directory</a>
+          <a href="frameworks.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Study Frameworks</a>
+          <button type="button" class="open-stack-drawer-btn relative inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition-colors" title="Open My Study Stack">
+            <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+            <span>My Stack</span>
+            <span class="stack-count-badge hidden ml-0.5 px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-brand-blue text-white">0</span>
+          </button>
+        </nav>
+
+        <!-- CTA Header Action -->
+        <div class="hidden md:flex items-center">
+          <a href="mailto:hello@studystackhub.example?subject=Resource%20Submission" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-purple hover:from-blue-600 hover:to-purple-600 rounded-lg shadow-sm hover:shadow transition-all focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 focus:ring-offset-brand-navy" title="Site administrator email placeholder: replace with your submission address">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            Submit a Resource
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-button" type="button" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-blue" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg id="menu-closed-icon" class="block w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="menu-opened-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-semibold bg-slate-800 text-white" aria-current="page">Home</a>
+      <a href="tools.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Tools Directory</a>
+      <a href="frameworks.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Study Frameworks</a>
+      <button type="button" class="open-stack-drawer-btn w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+          My Study Stack
+        </span>
+        <span class="stack-count-badge hidden px-2 py-0.5 rounded-full text-xs font-bold bg-brand-blue text-white">0</span>
+      </button>
+      <div class="pt-2">
+        <a href="mailto:hello@studystackhub.example?subject=Resource%20Submission" class="block text-center px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-purple rounded-lg shadow-sm">Submit a Resource</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section class="bg-brand-navy text-white pt-12 pb-16 lg:pt-16 lg:pb-24 relative overflow-hidden">
+      <!-- Background subtle glow accents -->
+      <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-blue/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-brand-purple/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Copy & Search -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-blue/20 text-blue-300 border border-brand-blue/30 mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+              Curated Academic Directory • No Sponsored Clutter
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
+              The Ultimate Free Resource Directory for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">Smart Students</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+              A curated index of top-rated AI tools, battle-tested study methods, and academic cheat sheets to crush your semester.
+            </p>
+
+            <!-- Search Interface -->
+            <div class="max-w-xl mx-auto lg:mx-0">
+              <form id="hero-search-form" class="relative" role="search" onsubmit="event.preventDefault(); handleHeroSearch();">
+                <label for="hero-search-input" class="sr-only">Search AI tools, study methods, exam resources</label>
+                <div class="relative flex items-center">
+                  <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                  </div>
+                  <input
+                    type="search"
+                    id="hero-search-input"
+                    class="block w-full pl-11 pr-28 py-3.5 bg-slate-900/90 text-white placeholder-slate-400 rounded-xl border border-slate-700 shadow-inner focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-brand-blue text-sm transition-colors"
+                    placeholder="Search AI tools, study methods, exam resources..."
+                    autocomplete="off"
+                  >
+                  <button
+                    type="submit"
+                    class="absolute right-1.5 px-4 py-2 bg-brand-blue hover:bg-blue-600 text-white text-xs sm:text-sm font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+
+              <!-- Live Interactive Search Results Dropdown -->
+              <div id="hero-search-results" class="hidden mt-2 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden text-left divide-y divide-slate-800 z-30 relative" aria-live="polite"></div>
+
+              <!-- Quick Filter Chips -->
+              <div class="mt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+                <span class="text-xs text-slate-400 font-medium">Quick Explore:</span>
+                <a href="tools.html?category=ai-research" class="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition-colors">
+                  #AI Tools
+                </a>
+                <a href="frameworks.html#pomodoro" class="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition-colors">
+                  #Pomodoro
+                </a>
+                <a href="frameworks.html#active-recall" class="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition-colors">
+                  #Exam Prep
+                </a>
+                <a href="tools.html?category=planning" class="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition-colors">
+                  #Notion Templates
+                </a>
+              </div>
+            </div>
+
+            <!-- Value Props Checklist -->
+            <div class="mt-8 grid grid-cols-3 gap-4 pt-6 border-t border-slate-800 text-slate-400 text-xs">
+              <div class="flex items-center justify-center lg:justify-start gap-1.5">
+                <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Peer-Reviewed Logic</span>
+              </div>
+              <div class="flex items-center justify-center lg:justify-start gap-1.5">
+                <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>No Fake Reviews</span>
+              </div>
+              <div class="flex items-center justify-center lg:justify-start gap-1.5">
+                <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Free Student Tools</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Image (Descriptive Unsplash Image) -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-700/60 bg-slate-800">
+                <img
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                  alt="University students collaborating with laptops in a modern library"
+                  class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                  width="800"
+                  height="600"
+                >
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-slate-900/95 border border-slate-700 backdrop-blur px-4 py-3 rounded-xl shadow-lg flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-teal/20 text-brand-teal flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-white">Student-First Verification</p>
+                  <p class="text-[11px] text-slate-400">Tested across university coursework</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FEATURED TOOLS SECTION -->
+    <section id="featured-tools" class="py-16 sm:py-20 bg-brand-slate">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand-blue mb-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
+              Essential Stack
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+              Featured Academic Productivity Tools
+            </h2>
+            <p class="mt-2 text-base text-slate-600 max-w-2xl">
+              Carefully vetted software designed to accelerate academic research, strengthen memory retention, and safeguard study focus.
+            </p>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <a href="tools.html" class="inline-flex items-center text-sm font-semibold text-brand-blue hover:text-blue-700 transition-colors group">
+              View All Tools
+              <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3-Card Resource Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: AI Research Assistant (Consensus) -->
+          <article class="rounded-xl border border-slate-200 bg-white hover:-translate-y-1 hover:shadow-lg transition-all p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue border border-blue-100 flex items-center justify-center font-bold text-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                  </svg>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  AI Research
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Consensus
+              </h3>
+              <p class="text-xs font-medium text-slate-500 mb-3">Category: AI Literature Search &amp; Synthesis</p>
+
+              <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                An evidence-first search engine powered by AI that extracts key findings from over 200 million peer-reviewed research papers, providing direct citations without synthetic hallucinations.
+              </p>
+
+              <div class="bg-slate-50 rounded-lg p-3 border border-slate-100 text-xs text-slate-600 mb-4 space-y-1">
+                <p><strong class="text-slate-800">Why use it:</strong> Finds consensus across published empirical studies in minutes.</p>
+                <p><strong class="text-slate-800">Best for:</strong> Term papers, literature reviews, and thesis citation hunting.</p>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <button
+                type="button"
+                class="btn-save-stack card-action-btn"
+                data-id="consensus"
+                data-title="Consensus"
+                data-category="AI Research"
+                data-url="tools.html#consensus"
+                data-snippet="Academic search engine synthesizing 200M+ peer-reviewed papers."
+                title="Save to My Study Stack"
+                aria-pressed="false"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                <span>Save</span>
+              </button>
+              <div class="flex items-center gap-3">
+                <a href="tools.html#consensus" class="text-xs font-semibold text-slate-700 hover:text-brand-blue transition-colors">Details</a>
+                <a href="https://consensus.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-brand-blue hover:text-blue-700 transition-colors">
+                  Official Site
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Spaced Repetition (Anki) -->
+          <article class="rounded-xl border border-slate-200 bg-white hover:-translate-y-1 hover:shadow-lg transition-all p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-purple-50 text-brand-purple border border-purple-100 flex items-center justify-center font-bold text-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                  Flashcards
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Anki
+              </h3>
+              <p class="text-xs font-medium text-slate-500 mb-3">Category: Spaced Repetition Flashcard System</p>
+
+              <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                The gold standard open-source spaced repetition engine. Uses the SM-2 algorithm to schedule review intervals just as memories are about to fade, drastically reducing total study time.
+              </p>
+
+              <div class="bg-slate-50 rounded-lg p-3 border border-slate-100 text-xs text-slate-600 mb-4 space-y-1">
+                <p><strong class="text-slate-800">Why use it:</strong> Eliminates cram-and-forget cycles through active retrieval practice.</p>
+                <p><strong class="text-slate-800">Best for:</strong> Medical terminology, STEM formulas, law cases, and languages.</p>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <button
+                type="button"
+                class="btn-save-stack card-action-btn"
+                data-id="anki"
+                data-title="Anki"
+                data-category="Flashcards"
+                data-url="tools.html#anki"
+                data-snippet="SM-2 algorithmic spaced repetition flashcards for permanent retention."
+                title="Save to My Study Stack"
+                aria-pressed="false"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                <span>Save</span>
+              </button>
+              <div class="flex items-center gap-3">
+                <a href="tools.html#anki" class="text-xs font-semibold text-slate-700 hover:text-brand-purple transition-colors">Details</a>
+                <a href="https://apps.ankiweb.net" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-brand-purple hover:text-purple-700 transition-colors">
+                  Official Site
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Focus Timer (Pomofocus) -->
+          <article class="rounded-xl border border-slate-200 bg-white hover:-translate-y-1 hover:shadow-lg transition-all p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 text-brand-teal border border-teal-100 flex items-center justify-center font-bold text-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-teal-100 text-teal-800">
+                  Focus &amp; Timing
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Pomofocus
+              </h3>
+              <p class="text-xs font-medium text-slate-500 mb-3">Category: Task-Based Pomodoro Timer</p>
+
+              <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                A lightweight, distraction-free productivity timer that pairs interval cycles (25/5 or 50/10) directly with task lists, audio cues, and visual session trackers.
+              </p>
+
+              <div class="bg-slate-50 rounded-lg p-3 border border-slate-100 text-xs text-slate-600 mb-4 space-y-1">
+                <p><strong class="text-slate-800">Why use it:</strong> Overcomes task initiation inertia and protects against digital distraction.</p>
+                <p><strong class="text-slate-800">Best for:</strong> Marathon reading sessions, problem sets, and essay drafting.</p>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <button
+                type="button"
+                class="btn-save-stack card-action-btn"
+                data-id="pomofocus"
+                data-title="Pomofocus"
+                data-category="Focus & Timing"
+                data-url="tools.html#pomofocus"
+                data-snippet="Distraction-free interval timer pairing sprints with task lists."
+                title="Save to My Study Stack"
+                aria-pressed="false"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                <span>Save</span>
+              </button>
+              <div class="flex items-center gap-3">
+                <a href="tools.html#pomofocus" class="text-xs font-semibold text-slate-700 hover:text-brand-teal transition-colors">Details</a>
+                <a href="https://pomofocus.io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-brand-teal hover:text-teal-700 transition-colors">
+                  Official Site
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- All Tools CTA Bar -->
+        <div class="mt-12 text-center">
+          <a href="tools.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+            <span>Explore All 6 Curated Student Tools</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- STUDY METHODS SECTION -->
+    <section id="study-methods" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand-purple mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
+            Cognitive Science Frameworks
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+            Match the Method to Your Study Challenge
+          </h2>
+          <p class="mt-3 text-base text-slate-600 leading-relaxed">
+            Tools are only as good as the learning strategies behind them. Understand how distinct cognitive methods target specific bottlenecks in your academic routine.
+          </p>
+        </div>
+
+        <!-- 4 Framework Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Method 1: Active Recall -->
+          <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-blue mb-1">Remembering</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Active Recall</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Strengthen neural connections by retrieving facts from memory rather than passively rereading notes.
+            </p>
+            <div class="text-xs text-slate-500 pt-3 border-t border-slate-200">
+              <span class="font-semibold text-slate-700">Best applied to:</span> Exam preparation and factual retention.
+            </div>
+          </div>
+
+          <!-- Method 2: Feynman Technique -->
+          <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-purple mb-1">Understanding</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Feynman Technique</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Explain complex concepts in simple, plain language to immediately expose hidden comprehension gaps.
+            </p>
+            <div class="text-xs text-slate-500 pt-3 border-t border-slate-200">
+              <span class="font-semibold text-slate-700">Best applied to:</span> Abstract concepts, STEM logic, and thesis ideas.
+            </div>
+          </div>
+
+          <!-- Method 3: Pomodoro 50/10 -->
+          <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-teal mb-1">Managing Focus</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Pomodoro 50/10</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Structure intense focus sessions with intentional recovery intervals to guard cognitive energy.
+            </p>
+            <div class="text-xs text-slate-500 pt-3 border-t border-slate-200">
+              <span class="font-semibold text-slate-700">Best applied to:</span> Beating procrastination and deep writing.
+            </div>
+          </div>
+
+          <!-- Method 4: Leitner System -->
+          <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-amber mb-1">Organizing Review</div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Leitner System</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Compartmentalize flashcards into tiered boxes, dedicating time only to items you frequently miss.
+            </p>
+            <div class="text-xs text-slate-500 pt-3 border-t border-slate-200">
+              <span class="font-semibold text-slate-700">Best applied to:</span> High-volume vocabulary and terminology.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cross-link Callout -->
+        <div class="mt-12 p-8 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2">Ready to master evidence-based study methods?</h3>
+            <p class="text-sm text-slate-300 max-w-xl">
+              Compare each technique side-by-side in our deep dive guide with step-by-step instructions, cognitive science references, and recommended tool pairings.
+            </p>
+          </div>
+          <a href="frameworks.html" class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-blue hover:bg-blue-600 text-white text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <span>Explore Frameworks</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FREQUENTLY ASKED QUESTIONS (SEO & RICH SNIPPET ALIGNED) -->
+    <section id="faq" class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand-blue mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
+            Common Inquiries
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="mt-2 text-sm text-slate-600">
+            Answers to common questions regarding student productivity software, cognitive frameworks, and exam preparation.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="group bg-white rounded-xl border border-slate-200 p-5 shadow-sm transition-all open:ring-1 open:ring-brand-blue/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer list-none select-none text-base">
+              <span>What are the best free AI productivity tools for university students?</span>
+              <span class="ml-4 flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+              Top vetted academic AI tools include <strong>Consensus</strong> for peer-reviewed literature synthesis, <strong>Anki</strong> for algorithmic spaced repetition, <strong>Zotero</strong> for citation management, and <strong>Pomofocus</strong> for distraction-free timed sprints. All featured tools have robust free tiers suitable for student budgets.
+            </p>
+          </details>
+
+          <details class="group bg-white rounded-xl border border-slate-200 p-5 shadow-sm transition-all open:ring-1 open:ring-brand-blue/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer list-none select-none text-base">
+              <span>What is the most effective scientific study technique for exam retention?</span>
+              <span class="ml-4 flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+              <strong>Active Recall</strong> paired with <strong>Spaced Repetition</strong> (via the Leitner System or Anki) is scientifically proven to outperform passive rereading or highlighting. Deliberately retrieving answers from memory triggers synaptic consolidation, producing durable recall during high-stakes exams.
+            </p>
+          </details>
+
+          <details class="group bg-white rounded-xl border border-slate-200 p-5 shadow-sm transition-all open:ring-1 open:ring-brand-blue/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer list-none select-none text-base">
+              <span>How does the Feynman Technique help understand difficult concepts?</span>
+              <span class="ml-4 flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+              The Feynman Technique forces you to teach a concept in plain, simple terms as if explaining it to a sixth-grader. Wherever you stumble, rely on buzzwords, or struggle to find a metaphor reveals the exact blind spot in your conceptual understanding.
+            </p>
+          </details>
+
+          <details class="group bg-white rounded-xl border border-slate-200 p-5 shadow-sm transition-all open:ring-1 open:ring-brand-blue/30">
+            <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer list-none select-none text-base">
+              <span>Is StudyStack Hub completely free to use?</span>
+              <span class="ml-4 flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+              Yes, StudyStack Hub is an open, 100% free educational directory created for university students, featuring un-sponsored tool recommendations, interactive bookmark stacks, and evidence-backed learning frameworks.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RECOMMENDED ACADEMIC STANDARDS (AUTHORITY REFERENCES) -->
+    <section class="py-14 bg-slate-100 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h2 class="text-xl font-bold text-slate-900 tracking-tight">
+            Recommended Academic &amp; Productivity Standards
+          </h2>
+          <p class="mt-2 text-xs sm:text-sm text-slate-600">
+            StudyStack Hub curates links to reputable external resources and software standards to support student rigor and scholarly integrity.
+          </p>
+        </div>
+
+        <!-- Contextual External Authority Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-brand-blue hover:shadow-sm transition-all group">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-slate-900 group-hover:text-brand-blue transition-colors">Purdue Online Writing Lab (OWL)</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </div>
+            <p class="text-xs text-slate-500">Benchmark style guidelines, MLA/APA citations, and scholarly writing mechanics.</p>
+          </a>
+
+          <a href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-brand-purple hover:shadow-sm transition-all group">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-slate-900 group-hover:text-brand-purple transition-colors">Anki Open-Source Engine</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </div>
+            <p class="text-xs text-slate-500">Cross-platform spaced repetition flashcard database and community decks.</p>
+          </a>
+
+          <a href="https://www.notion.so/product" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-brand-teal hover:shadow-sm transition-all group">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-slate-900 group-hover:text-brand-teal transition-colors">Notion Academic Workspace</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </div>
+            <p class="text-xs text-slate-500">Flexible modular database system for tracking syllabi, lecture notes, and projects.</p>
+          </a>
+
+          <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-brand-amber hover:shadow-sm transition-all group">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-bold text-slate-900 group-hover:text-brand-amber transition-colors">Google Search Central</span>
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </div>
+            <p class="text-xs text-slate-500">Web standards, accessible schema practices, and crawlability guidelines.</p>
+          </a>
+
+        </div>
+
+        <p class="text-[11px] text-slate-500 text-center mt-6">
+          * Note: External links are referenced strictly for educational context. StudyStack Hub is not affiliated with or endorsed by these external platforms.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="bg-brand-navy text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Summary -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 mb-3">
+            <div class="w-7 h-7 rounded-md bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <span class="text-base font-bold text-white tracking-tight">StudyStack Hub</span>
+          </a>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm mb-4">
+            A curated student productivity directory for discovering useful tools, study frameworks, and academic resources.
+          </p>
+          <p class="text-xs text-slate-500 italic">
+            Motto: Discover better tools. Learn better methods. Study smarter.
+          </p>
+        </div>
+
+        <!-- Primary Sitemap Navigation -->
+        <div>
+          <h3 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">Directory Sitemap</h3>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="tools.html" class="hover:text-white transition-colors">Tools Directory</a></li>
+            <li><a href="frameworks.html" class="hover:text-white transition-colors">Study Frameworks</a></li>
+            <li><a href="mailto:hello@studystackhub.example?subject=Resource%20Submission" class="text-brand-blue hover:underline">Submit a Resource</a></li>
+          </ul>
+        </div>
+
+        <!-- Educational References -->
+        <div>
+          <h3 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">Academic References</h3>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="https://lsc.cornell.edu/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Cornell Learning Strategies</a></li>
+            <li><a href="https://academicresourcecenter.harvard.edu/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Harvard Academic Resource</a></li>
+            <li><a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Purdue OWL</a></li>
+            <li><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Anki Web</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Independent Disclaimer -->
+      <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 leading-relaxed space-y-2">
+        <p>
+          <strong>Independent Directory Disclaimer:</strong> StudyStack Hub is an independent, student-first reference directory. External tools, applications, and educational institutions mentioned are trademarks and intellectual properties of their respective organizations. Availability, pricing tiers, and capabilities of third-party software may change without notice. Mention of third-party software or academic entities (including Google, Notion, Anki, Purdue University, Cornell University, or Harvard University) does not constitute or imply sponsorship, endorsement, or formal affiliation.
+        </p>
+        <p class="text-slate-600">
+          &copy; 2026 StudyStack Hub. Designed for university and college student productivity.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== MY STUDY STACK SLIDE-OUT DRAWER ==================== -->
+  <div id="study-stack-drawer-backdrop" class="drawer-backdrop" aria-hidden="true">
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer-header">
+        <div class="flex items-center gap-2.5">
+          <div class="w-7 h-7 rounded-lg bg-brand-blue flex items-center justify-center text-white">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+          </div>
+          <div>
+            <h3 id="drawer-title" class="font-bold text-sm tracking-tight text-white">My Study Stack</h3>
+            <span id="study-stack-drawer-count" class="text-[11px] text-slate-400 font-medium">0 items</span>
+          </div>
+        </div>
+        <button type="button" onclick="closeStudyStackDrawer()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition-colors" aria-label="Close drawer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="study-stack-drawer-items" class="drawer-body">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+      <div class="drawer-footer flex items-center justify-between text-xs text-slate-500">
+        <span>Saved locally in browser</span>
+        <button type="button" onclick="closeStudyStackDrawer()" class="px-3 py-1.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold rounded-md transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

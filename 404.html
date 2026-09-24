@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Page Not Found (404) | StudyStack Hub</title>
+  <meta name="description" content="The page you are looking for does not exist or has been moved. Explore our curated AI student tools and study frameworks.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Tailwind CSS CDN with custom design tokens -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              slate: '#F8FAFC',
+              blue: '#3B82F6',
+              purple: '#8B5CF6',
+              teal: '#14B8A6',
+              amber: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-slate text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="bg-brand-navy border-b border-slate-800 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center shadow-md">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span class="font-bold text-lg tracking-tight text-white">StudyStack<span class="text-brand-blue font-semibold ml-1">Hub</span></span>
+        </a>
+        <nav class="flex items-center space-x-3 text-sm">
+          <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Home</a>
+          <a href="tools.html" class="text-slate-300 hover:text-white transition-colors">Tools</a>
+          <a href="frameworks.html" class="text-slate-300 hover:text-white transition-colors">Frameworks</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Hero Content -->
+  <main class="flex-grow flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-lg w-full text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-blue-100 text-brand-blue mb-6 shadow-inner">
+        <span class="text-3xl font-extrabold">404</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Resource Not Found
+      </h1>
+      <p class="text-slate-600 text-base mb-8 leading-relaxed">
+        The link you followed may be broken or the resource has moved. Don't worry—all our curated study frameworks and AI tools are right where they belong.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="index.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-blue hover:bg-blue-600 text-white font-semibold text-sm shadow-md transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Return to Homepage
+        </a>
+        <a href="tools.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm border border-slate-300 shadow-sm transition-colors">
+          Explore AI Tools
+        </a>
+      </div>
+
+      <!-- Quick Helpful Links -->
+      <div class="mt-12 pt-8 border-t border-slate-200">
+        <p class="text-xs uppercase font-semibold text-slate-500 tracking-wider mb-3">Popular Study Resources</p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <a href="tools.html?category=ai-research" class="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition-colors">AI Research Tools</a>
+          <a href="frameworks.html#active-recall" class="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition-colors">Active Recall Guide</a>
+          <a href="frameworks.html#pomodoro" class="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition-colors">Pomodoro Timer</a>
+          <a href="tools.html?category=retention" class="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium transition-colors">Flashcard Apps</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-slate-400 text-xs py-6 text-center border-t border-slate-800">
+    <p>&copy; 2026 StudyStack Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

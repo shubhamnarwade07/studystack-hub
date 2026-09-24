@@ -1,0 +1,375 @@
+/* ==========================================================================
+   StudyStack Hub - Master Stylesheet
+   Modern, cohesive CSS custom tokens, glassmorphism, micro-animations,
+   accessible focus states, custom scrollbars, and interactive components.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Custom Properties (Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+  --color-brand-navy: #0F172A;
+  --color-brand-slate: #F8FAFC;
+  --color-brand-blue: #3B82F6;
+  --color-brand-blue-hover: #2563EB;
+  --color-brand-purple: #8B5CF6;
+  --color-brand-purple-hover: #7C3AED;
+  --color-brand-teal: #14B8A6;
+  --color-brand-amber: #F59E0B;
+  --color-brand-emerald: #10B981;
+  --color-card-border: rgba(226, 232, 240, 0.85);
+  --color-card-border-hover: rgba(59, 130, 246, 0.4);
+  --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-elevated: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-glow-blue: 0 0 20px -3px rgba(59, 130, 246, 0.25);
+  --shadow-glow-purple: 0 0 20px -3px rgba(139, 92, 246, 0.25);
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. Modern Fluid Scrollbar
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  border: 2px solid #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* --------------------------------------------------------------------------
+   3. Glassmorphism & Visual Accents
+   -------------------------------------------------------------------------- */
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(15, 23, 42, 0.92);
+}
+
+.glass-panel {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Subtle gradient text highlight */
+.gradient-text {
+  background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 50%, #F472B6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   4. Card Hover Elevation & Micro-Interactions
+   -------------------------------------------------------------------------- */
+.tool-card {
+  position: relative;
+  transition: var(--transition-smooth);
+  will-change: transform, box-shadow, border-color;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-card-border-hover);
+  box-shadow: var(--shadow-elevated), var(--shadow-glow-blue);
+}
+
+/* Action buttons on cards */
+.card-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: #F8FAFC;
+  color: #475569;
+}
+
+.card-action-btn:hover {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  border-color: #CBD5E1;
+}
+
+.card-action-btn.saved {
+  background-color: #EFF6FF;
+  color: #2563EB;
+  border-color: #BFDBFE;
+}
+
+.card-action-btn.saved svg {
+  fill: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   5. Interactive Bookmark / My Stack Slide-Out Drawer
+   -------------------------------------------------------------------------- */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  background-color: #FFFFFF;
+  z-index: 101;
+  box-shadow: -10px 0 25px -5px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-backdrop.active .drawer-panel {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0F172A;
+  color: #FFFFFF;
+}
+
+.drawer-body {
+  padding: 1.25rem 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.drawer-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #E2E8F0;
+  background-color: #F8FAFC;
+}
+
+/* Stack Drawer item card */
+.stack-item-card {
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  border: 1px solid #E2E8F0;
+  background-color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.stack-item-card:hover {
+  border-color: #93C5FD;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------------------------------------------------------------
+   6. Modern Toast Notification
+   -------------------------------------------------------------------------- */
+#toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  min-width: 280px;
+  max-width: 360px;
+  padding: 0.85rem 1.1rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  animation: toastSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast-success {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  border: 1px solid #334155;
+}
+
+.toast-success .toast-icon {
+  color: #34D399;
+}
+
+.toast-info {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  border: 1px solid #334155;
+}
+
+.toast-info .toast-icon {
+  color: #60A5FA;
+}
+
+.toast-hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. Interactive Study Method Recommender Widget
+   -------------------------------------------------------------------------- */
+.quiz-widget {
+  background: linear-gradient(145deg, #0F172A 0%, #1E293B 100%);
+  border-radius: 1.25rem;
+  border: 1px solid #334155;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.2);
+  color: #FFFFFF;
+}
+
+.quiz-option-btn {
+  background-color: rgba(30, 41, 59, 0.7);
+  border: 1px solid #475569;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  transition: var(--transition-smooth);
+  color: #E2E8F0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quiz-option-btn:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: #60A5FA;
+  color: #FFFFFF;
+  transform: translateX(3px);
+}
+
+.quiz-option-btn.selected {
+  background-color: rgba(59, 130, 246, 0.25);
+  border-color: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   8. Micro-Pills and Badge Enhancements
+   -------------------------------------------------------------------------- */
+.filter-pill {
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.filter-pill:hover:not([aria-selected="true"]) {
+  background-color: #E2E8F0;
+  color: #0F172A;
+}
+
+.badge-pulse {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.badge-pulse::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 9999px;
+  background-color: inherit;
+  opacity: 0.6;
+  animation: badgePulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes badgePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. Accessibility & Reduced Motion
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
