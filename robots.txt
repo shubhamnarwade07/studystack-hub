@@ -1,0 +1,7 @@
+# StudyStack Hub - robots.txt
+# Allows search engine crawlers (Googlebot, Bingbot, etc.) to index public resources
+User-agent: *
+Allow: /
+
+# Sitemap location for automated crawler discovery
+Sitemap: https://studystack-hub.onrender.com/sitemap.xml

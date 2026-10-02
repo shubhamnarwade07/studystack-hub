@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Page Not Found (404) | StudyStack Hub</title>
+  <meta name="description" content="The page you are looking for does not exist or has moved. Explore our curated academic tools and study frameworks.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-mark" aria-label="StudyStack Hub Homepage">
+        <div class="brand-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>StudyStack Hub</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="tools.html" class="nav-item">Tools Directory</a>
+        <a href="frameworks.html" class="nav-item">Study Frameworks</a>
+      </nav>
+
+      <button id="mobile-menu-button" type="button" class="mobile-nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg id="menu-closed-icon" style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="menu-opened-icon" class="hidden" style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu-drawer hidden">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="tools.html" class="mobile-menu-link">Tools Directory</a>
+      <a href="frameworks.html" class="mobile-menu-link">Study Frameworks</a>
+    </div>
+  </header>
+
+  <!-- 404 Main Stage -->
+  <main style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 5rem 1.5rem;">
+    <div style="max-width: 520px; width: 100%; text-align: center;">
+      <span style="font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-tertiary); display: block; margin-bottom: 0.75rem;">
+        Error 404
+      </span>
+      <h1 class="text-section-title" style="margin: 0 0 1rem;">Page Not Found</h1>
+      <p style="font-size: 1.0625rem; color: var(--color-text-secondary); line-height: 1.55; margin: 0 0 2rem;">
+        The link you followed may be outdated or the page has moved. All curated study frameworks and verified academic tools remain available below.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 3rem;">
+        <a href="index.html" class="btn-primary">
+          Return to Homepage
+        </a>
+        <a href="tools.html" class="btn-secondary">
+          Explore Tools Directory
+        </a>
+      </div>
+
+      <div style="padding-top: 2rem; border-top: 1px solid var(--color-border-subtle);">
+        <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-tertiary); display: block; margin-bottom: 0.75rem;">
+          Quick Directory Links
+        </span>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+          <a href="tools.html?category=ai-research" class="quick-pill">AI Literature Search</a>
+          <a href="tools.html?category=retention" class="quick-pill">Spaced Repetition</a>
+          <a href="frameworks.html#active-recall" class="quick-pill">Active Recall Guide</a>
+          <a href="frameworks.html#pomodoro" class="quick-pill">Pomodoro Method</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-nav-grid">
+        <div>
+          <div style="font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">StudyStack Hub</div>
+          <p style="margin: 0 0 1rem; line-height: 1.5; max-width: 320px;">
+            An independent student productivity directory curating academic tools and cognitive learning frameworks.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Directory</h3>
+          <ul class="footer-link-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Tools Directory</a></li>
+            <li><a href="frameworks.html">Study Frameworks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Academic</h3>
+          <ul class="footer-link-list">
+            <li><a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue OWL</a></li>
+            <li><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki Web</a></li>
+            <li><a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">Zotero</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-link-list">
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>
+          Independent Directory Notice: StudyStack Hub is an open educational reference. External product names are trademarks of their respective owners.
+        </p>
+        <p>&copy; 2026 StudyStack Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
